@@ -9,9 +9,9 @@ export function Projects({ onProjectClick }) {
     {
       id: 1,
       title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with shopping cart, payment integration, and admin dashboard.',
+      description: 'A full-featured e-commerce platform with shopping cart, payment, and admin dashboard.',
       image: 'https://images.unsplash.com/flagged/photo-1596559880461-bfbef645963f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBzaG9wcGluZyUyMHdlYnNpdGV8ZW58MXx8fHwxNzYwNTk3Mjg1fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      technologies: ['Express', 'React', 'Node.js', 'MongoDB', 'Stripe'],
       featured: true,
     },
     {
@@ -19,7 +19,7 @@ export function Projects({ onProjectClick }) {
       title: 'Task Management Dashboard',
       description: 'A collaborative task management application with real-time updates and team features.',
       image: 'https://images.unsplash.com/photo-1758876201729-e60eaf5f9194?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjB0YXNrJTIwbWFuYWdlbWVudCUyMGFwcHxlbnwxfHx8fDE3NjA2NTI0NzV8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
+      technologies: ['React', 'Express', 'MongoDB' 'TypeScript', 'PostgreSQL', 'Prisma'],
       featured: true,
     },
     {
