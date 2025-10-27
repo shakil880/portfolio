@@ -9,7 +9,7 @@ export function Projects({ onProjectClick }) {
     {
       id: 1,
       title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with shopping cart, payment, and admin dashboard.',
+      description: 'Full-stack e-commerce app with shopping cart, payment, and admin dashboard.',
       image: 'https://images.unsplash.com/flagged/photo-1596559880461-bfbef645963f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBzaG9wcGluZyUyMHdlYnNpdGV8ZW58MXx8fHwxNzYwNTk3Mjg1fDA&ixlib=rb-4.1.0&q=80&w=1080',
       technologies: ['Express', 'React', 'Node.js', 'MongoDB', 'Stripe'],
       featured: true,
