@@ -7,12 +7,8 @@ export function Education() {
       degree: 'Bachelor of Science in Computer Science',
       institution: 'University of the People',
       location: 'Online, USA',
-      period: 'Expecteed Graduation - Auguest 2026',
-      description: 'Focused on software engineering, algorithms, and web development',
-      achievements: [
-        'GPA: 3.92/4.0',
-        'President\'s List for 2 terms'
-      ],
+      period: 'Expected Graduation - August 2026',
+      description: 'Focused on Software Engineering',
     },
     {
       degree: 'Bachelor of Business Administration',
@@ -62,20 +58,7 @@ export function Education() {
                     </div>
                   </div>
                 </div>
-
                 <p className="text-foreground/70 mb-4">{edu.description}</p>
-
-                <div className="bg-secondary/30 rounded-lg p-4">
-                  <h4 className="text-sm mb-2 text-primary">Key Achievements:</h4>
-                  <ul className="space-y-1">
-                     {(edu.achievements || []).map((achievement, achIdx) => (
-                      <li key={achIdx} className="text-sm text-foreground/70 flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
-                        <span>{achievement}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </CardContent>
             </Card>
           ))}
