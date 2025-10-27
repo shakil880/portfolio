@@ -68,7 +68,7 @@ export function Education() {
                 <div className="bg-secondary/30 rounded-lg p-4">
                   <h4 className="text-sm mb-2 text-primary">Key Achievements:</h4>
                   <ul className="space-y-1">
-                    {edu.achievements.map((achievement, achIdx) => (
+                     {(edu.achievements || []).map((achievement, achIdx) => (
                       <li key={achIdx} className="text-sm text-foreground/70 flex items-start gap-2">
                         <span className="text-primary mt-1">•</span>
                         <span>{achievement}</span>
