@@ -7,25 +7,19 @@ export function Education() {
       degree: 'Bachelor of Science in Computer Science',
       institution: 'University of the People',
       location: 'Online, USA',
-      period: '2018 - 2022',
-      description: 'Graduated with honors. Focused on software engineering, algorithms, and web development. Completed multiple projects and participated in hackathons.',
+      period: 'Expecteed Graduation - Auguest 2026',
+      description: 'Focused on software engineering, algorithms, and web development',
       achievements: [
-        'GPA: 3.8/4.0',
-        'Dean\'s List for 6 semesters',
-        'Best Final Year Project Award',
+        'GPA: 3.92/4.0',
+        'President\'s List for 2 terms'
       ],
     },
     {
-      degree: 'Higher Secondary Certificate (HSC)',
-      institution: 'Central High School',
-      location: 'New York, USA',
-      period: '2016 - 2018',
-      description: 'Completed with distinction in Science stream. Developed strong foundation in mathematics and physics.',
-      achievements: [
-        'Grade: A+ (92%)',
-        'Science Club President',
-        'Mathematics Olympiad - Regional Winner',
-      ],
+      degree: 'Bachelor of Business Administration',
+      institution: 'National Universiy',
+      location: 'Bangladesh',
+      period: '2009 - 2014',
+      description: 'Graduated with honors. Focused on Accounting.'
     },
   ];
 
