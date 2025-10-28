@@ -6,7 +6,7 @@ export function Hero() {
   const handleDownloadResume = () => {
     // Download CV from public folder
     const link = document.createElement('a');
-    link.href = '/cv_ehesan.doc';
+    link.href = 'https://drive.google.com/file/d/1shiHLBRc01nya6MZqHf5srUUZfjyvXVg/view?usp=drive_link';
     link.download = 'cv_ehesan.doc';
     document.body.appendChild(link);
     link.click();
