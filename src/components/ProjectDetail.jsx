@@ -22,7 +22,7 @@ export function ProjectDetail({ projectId, onClose }) {
       description:
         'Full-stack forum application with authentication using NextAuth and database management using Prisma with PostgreSQL (Neon). Supports post creation, browsing, and responsive UI.',
       liveLink: 'https://super-tech-forum-next-js.vercel.app/',
-      githubLink: '#',
+      githubLink: 'https://github.com/shakil880/super_tech_forum_next.js',
     },
   };
 
