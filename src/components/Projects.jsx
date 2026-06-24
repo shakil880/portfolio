@@ -1,4 +1,4 @@
-import { ExternalLink, Github, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardFooter, CardHeader } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
@@ -9,25 +9,19 @@ export function Projects({ onProjectClick }) {
     {
       id: 1,
       title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce app with shopping cart, payment, and admin dashboard.',
-      image: 'https://images.unsplash.com/flagged/photo-1596559880461-bfbef645963f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBzaG9wcGluZyUyMHdlYnNpdGV8ZW58MXx8fHwxNzYwNTk3Mjg1fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      technologies: ['Express', 'React', 'Node.js', 'MongoDB', 'Stripe'],
+      description:
+        'Full-stack e-commerce system with product management, authentication, admin dashboard, and Stripe payment integration.',
+      image: 'https://via.placeholder.com/600x400',
+      technologies: ['Next.js', 'React', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
       featured: true,
     },
     {
       id: 2,
-      title: 'Task Management Dashboard',
-      description: 'A collaborative task management application with real-time updates and team features.',
-      image: 'https://images.unsplash.com/photo-1758876201729-e60eaf5f9194?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjB0YXNrJTIwbWFuYWdlbWVudCUyMGFwcHxlbnwxfHx8fDE3NjA2NTI0NzV8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      technologies: ['React', 'Express', 'MongoDB', 'TypeScript', 'PostgreSQL', 'Prisma'],
-      featured: true,
-    },
-    {
-      id: 3,
-      title: 'Analytics Dashboard',
-      description: 'Modern analytics dashboard with interactive charts and data visualization.',
-      image: 'https://images.unsplash.com/photo-1665470909939-959569b20021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NjA2NTI0NzR8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      technologies: ['React', 'Recharts', 'Tailwind CSS', 'Express'],
+      title: 'Forum Application',
+      description:
+        'Full-stack forum app with authentication, Prisma ORM, PostgreSQL database, and responsive UI.',
+      image: 'https://via.placeholder.com/600x400',
+      technologies: ['Next.js', 'React', 'Prisma', 'PostgreSQL', 'NextAuth'],
       featured: true,
     },
   ];
@@ -35,17 +29,23 @@ export function Projects({ onProjectClick }) {
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
+
+        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl mb-4">Featured Projects</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-4"></div>
           <p className="text-foreground/70 max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and experience
+            Projects showcasing my full-stack development skills
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <Card key={project.id} className="overflow-hidden hover:shadow-xl transition-all group">
+            <Card
+              key={project.id}
+              className="overflow-hidden hover:shadow-xl transition-all group"
+            >
               <CardHeader className="p-0">
                 <div className="relative overflow-hidden h-48">
                   <ImageWithFallback
@@ -53,20 +53,16 @@ export function Projects({ onProjectClick }) {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  {project.featured && (
-                    <Badge className="absolute top-4 right-4 bg-primary">
-                      Featured
-                    </Badge>
-                  )}
                 </div>
               </CardHeader>
-              
+
               <CardContent className="p-6">
                 <h3 className="text-xl mb-2">{project.title}</h3>
+
                 <p className="text-foreground/70 mb-4 line-clamp-3">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, idx) => (
                     <Badge key={idx} variant="secondary">
