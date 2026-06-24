@@ -28,7 +28,7 @@ export function Hero() {
             </h1>
             
             <h2 className="text-2xl sm:text-3xl lg:text-4xl text-muted-foreground mb-6">
-              Frontend Developer
+              Next.js Developer
             </h2>
             
             <p className="text-lg text-foreground/70 mb-8 max-w-2xl mx-auto lg:mx-0">
