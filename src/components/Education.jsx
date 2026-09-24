@@ -44,14 +44,6 @@ export function Education() {
                   </div>
                   
                   <div className="flex flex-col gap-2 text-sm text-muted-foreground md:text-right">
-                    <div className="flex items-center gap-2 md:justify-end">
-                      <Calendar className="h-4 w-4" />
-                      <span>{edu.period}</span>
-                    </div>
-                    <div className="flex items-center gap-2 md:justify-end">
-                      <MapPin className="h-4 w-4" />
-                      <span>{edu.location}</span>
-                    </div>
                   </div>
                 </div>
                 <p className="text-foreground/70 mb-4">{edu.description}</p>
