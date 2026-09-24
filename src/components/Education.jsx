@@ -6,15 +6,11 @@ export function Education() {
     {
       degree: 'Bachelor of Science in Computer Science',
       institution: 'University of the People',
-      location: 'Online, USA',
-      period: 'Expected Graduation - August 2026',
       description: 'Focused on Software Engineering',
     },
     {
       degree: 'Bachelor of Business Administration',
       institution: 'National Universiy',
-      location: 'Bangladesh',
-      period: '2009 - 2014',
       description: 'Graduated with honors. Focused on Accounting.'
     },
   ];
